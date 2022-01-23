@@ -1,4 +1,4 @@
 uvicorn==0.16.0
 fastapi==0.71.0
 pydantic==1.9.0
-pandas @ file:///opt/concourse/worker/volumes/live/f14cf8c4-c564-4eff-4b17-158e90dbf88a/volume/pandas_1602088128240/work
+pandas==1.1.3
