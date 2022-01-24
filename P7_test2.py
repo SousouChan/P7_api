@@ -33,9 +33,12 @@ async def predict_creditnote(data_api: creditnote):
 
     
     if(prediction[0][0]>0.5):
-        prediction="bankrupt customer"
+        prediction="solvent customer"
+        probability=prediction[0][0]
     else:
-        prediction:"solvent customer"
+        prediction:"bankrupt customer"
+        probability=prediction[0][1]
     return {
-'prediction': prediction
+'prediction': prediction,'probability'=probability
+       
 }
